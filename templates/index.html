@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Enter Location for Weather Information</h2>
+  <form method="POST">
+    <label for="location">Location (e.g., City, Zip, Coordinates):</label>
+    <input type="text" name="location" id="location" required>
+    <br>
+    <label for="date_range">Date Range (optional, format: YYYY-MM-DD to YYYY-MM-DD):</label>
+    <input type="text" name="date_range" id="date_range">
+    <br>
+    <button type="submit">Get Weather</button>
+  </form>
+  <a href="{{ url_for('records') }}">View Saved Weather Queries</a>
+{% endblock %}
