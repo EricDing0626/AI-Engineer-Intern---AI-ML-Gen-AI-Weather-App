@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Weather for {{ location }}</h2>
+  <div>
+    <h3>Current Weather:</h3>
+    <p>Temperature: {{ weather.main.temp }} °C</p>
+    <p>Humidity: {{ weather.main.humidity }}%</p>
+    <p>Condition: {{ weather.weather[0].description }}</p>
+  </div>
+  <div>
+    <h3>5-Day Forecast:</h3>
+    {% for entry in forecast.list if loop.index0 % 8 == 0 %}
+      <div style="border: 1px solid #ddd; margin: 5px; padding: 5px;">
+        <p>Date/Time: {{ entry.dt_txt }}</p>
+        <p>Temp: {{ entry.main.temp }} °C</p>
+        <p>Condition: {{ entry.weather[0].description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <a href="{{ url_for('index') }}">Back to Home</a>
+{% endblock %}
