@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Edit Weather Query</h2>
+  <form method="POST">
+    <label for="location">Location:</label>
+    <input type="text" name="location" id="location" value="{{ record.location }}" required>
+    <br>
+    <label for="date_range">Date Range (optional):</label>
+    <input type="text" name="date_range" id="date_range" value="{{ record.date_range }}">
+    <br>
+    <button type="submit">Update Record</button>
+  </form>
+  <a href="{{ url_for('records') }}">Back to Records</a>
+{% endblock %}
