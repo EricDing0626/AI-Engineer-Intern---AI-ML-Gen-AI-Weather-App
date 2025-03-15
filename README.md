@@ -1,6 +1,6 @@
 # AI-Engineer-Intern---AI-ML-Gen-AI-Application-Technical-Assessment-Weather-App
 
-##Features
+## Features
 - **Real-Time Weather Retrieval:**
 Enter a location (city name, zip code, GPS coordinates, etc.) to fetch and display current weather data along with a 5-day forecast.
 
@@ -13,23 +13,7 @@ A simple UI built with Flask templates. The header displays my name and includes
 - **API Integration:**
 Integrates with the OpenWeatherMap API to retrieve live weather information.
 
-##Project Structure
-weather_app/
-├── app.py # Main Flask application file with routes and business logic
-├── models.py # SQLAlchemy models for data persistence
-├── config.py # Application configuration (API keys, DB URI, etc.)
-├── requirements.txt # Python dependencies
-├── templates/ # HTML templates for the UI
-│ ├── base.html # Base template with header and info modal
-│ ├── index.html # Home page with input form
-│ ├── weather.html # Displays current weather and forecast
-│ ├── records.html # Lists saved weather queries (CRUD read)
-│ └── edit_record.html # Form for updating weather queries (CRUD update)
-└── static/
-└── css/
-└── styles.css # Basic CSS styling
-
-##Installation
+## Installation
 - **Clone the Repository**
 
 - **Create a Virtual Environment**
@@ -38,7 +22,7 @@ weather_app/
 
 - **Configure Environment Variables**
 
-##Usage
+## Usage
 - **Home Page:**
 Enter a location (e.g., "London" or "90210") and, optionally, a date range. Submit the form to fetch the weather data.
 
@@ -51,5 +35,5 @@ Click the "View Saved Weather Queries" link to see all stored queries. You can u
 - **Info Modal:**
 Click the "Info" button in the header to view details about PM Accelerator, including a link to their LinkedIn page.
 
-##PM Accelerator Mission
+## PM Accelerator Mission
 PM Accelerator empowers product managers with cutting-edge insights and tools to drive innovation and efficiency. For more information, visit our LinkedIn page: https://www.linkedin.com/company/pm-accelerator.
