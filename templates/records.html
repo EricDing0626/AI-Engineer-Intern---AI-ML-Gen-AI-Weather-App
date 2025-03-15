@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Stored Weather Queries</h2>
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>Location</th>
+      <th>Date Range</th>
+      <th>Timestamp</th>
+      <th>Actions</th>
+    </tr>
+    {% for record in queries %}
+      <tr>
+        <td>{{ record.id }}</td>
+        <td>{{ record.location }}</td>
+        <td>{{ record.date_range }}</td>
+        <td>{{ record.timestamp.strftime("%Y-%m-%d %H:%M:%S") }}</td>
+        <td>
+          <a href="{{ url_for('edit_record', query_id=record.id) }}">Edit</a>
+          <form action="{{ url_for('delete_record', query_id=record.id) }}" method="POST" style="display:inline;">
+            <button type="submit" onclick="return confirm('Are you sure?')">Delete</button>
+          </form>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+  <a href="{{ url_for('index') }}">Back to Home</a>
+{% endblock %}
