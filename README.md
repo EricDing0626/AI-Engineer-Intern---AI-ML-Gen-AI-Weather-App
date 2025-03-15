@@ -36,4 +36,4 @@ Click the "View Saved Weather Queries" link to see all stored queries. You can u
 Click the "Info" button in the header to view details about PM Accelerator, including a link to their LinkedIn page.
 
 ## PM Accelerator Mission
-PM Accelerator empowers product managers with cutting-edge insights and tools to drive innovation and efficiency. For more information, visit our LinkedIn page: https://www.linkedin.com/company/pm-accelerator.
+PM Accelerator empowers product managers with cutting-edge insights and tools to drive innovation and efficiency. For more information, visit our LinkedIn page: [ https://www.linkedin.com/company/pm-accelerator.](https://www.linkedin.com/school/pmaccelerator/)
