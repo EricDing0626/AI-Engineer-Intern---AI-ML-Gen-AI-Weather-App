@@ -1,4 +1,4 @@
-# AI-Engineer-Intern---AI-ML-Gen-AI-Application-Technical-Assessment-Weather-App
+# AI-Engineer-Intern---AI-ML-Gen-AI-Weather-App
 
 ## Features
 - **Real-Time Weather Retrieval:**
